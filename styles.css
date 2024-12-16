@@ -77,7 +77,7 @@ main {
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin: 0 3cm; /* Separación de 3 cm en los lados */
+    margin: 0 2.5cm; /* Separación de 3 cm en los lados */
 }
 
 /* Sección de imágenes de noticias y promociones */
