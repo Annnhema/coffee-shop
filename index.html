@@ -29,13 +29,38 @@
     </header>
 
     <main>
+        <!-- Sección Horizontal: LATTE -->
+        <section id="latte" class="section">
+            <img src="latte.png" alt="Latte" class="section-image">
+        </section>
+
+        <!-- Sección Horizontal: TEMPORADA -->
+        <section id="temporada" class="section">
+            <img src="temporada.png" alt="Temporada" class="section-image">
+        </section>
+
+        <!-- Sección Horizontal: CAFÉ -->
+        <section id="cafe" class="section">
+            <img src="cafe.png" alt="Café" class="section-image">
+        </section>
+
+        <!-- Sección Horizontal: REWARDS -->
+        <section id="rewards" class="section">
+            <img src="rewards.png" alt="Recompensas" class="section-image">
+        </section>
+
+        <!-- Sección Horizontal: PLANETA -->
+        <section id="planeta" class="section">
+            <img src="planeta.png" alt="Planeta" class="section-image">
+        </section>
+
         <!-- Sección de Noticias y Promociones -->
         <div class="images-section">
             <div class="image">
                 <img src="noticias.png" alt="Noticias">
                 <div class="info-box">
                     <p>Consulta los eventos más recientes.</p>
-                    <a href="#noticias" class="button">Aquí</a> <!-- Redirige a la sección de Noticias en la misma página -->
+                    <a href="noticias.html" class="button">Aquí</a>
                 </div>
             </div>
 
@@ -43,71 +68,11 @@
                 <img src="promociones.png" alt="Promociones">
                 <div class="info-box">
                     <p>Consulta las promociones más recientes.</p>
-                    <a href="#promociones" class="button">Aquí</a> <!-- Redirige a la sección de Promociones -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Sección Noticias (Ancla #noticias) -->
-        <section id="noticias">
-            <div class="image">
-                <img src="Noticias.jpg" alt="Noticias">
-                <div class="info-box">
-                    <p>Consulta las noticias más recientes de Starbucks.</p>
-                    <a href="#noticias" class="button">Ver más</a>
-                </div>
-            </div>
-            <div class="info-box">
-                <p>Consulta los eventos más recientes.</p>
-            </div>
-        </section>
-
-        <!-- Sección Historias (Ancla #historias) -->
-        <section id="historias">
-            <div class="image">
-                <img src="Historias.jpg" alt="Historias">
-                <div class="info-box">
-                    <p>Consulta las historias más recientes de Starbucks.</p>
-                    <a href="#historias" class="button">Ver más</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Noticias y Promociones (Botones) -->
-        <div class="images-section">
-            <div class="image">
-                <img src="recientes.png" alt="Recientes">
-                <div class="info-box">
-                    <p>Consulta los eventos más recientes.</p>
-                    <a href="#noticias" class="button">Ver más</a> <!-- Redirige a la sección de Noticias -->
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="historias.png" alt="Historias">
-                <div class="info-box">
-                    <p>Consulta las historias más recientes de Starbucks.</p>
-                    <a href="#historias" class="button">Ver más</a> <!-- Redirige a la sección de Historias -->
+                    <a href="noticias.html" class="button">Aquí</a>
                 </div>
             </div>
         </div>
     </main>
-
-    <script>
-        // Función para redirigir al hacer clic en "Aquí" (Noticias)
-        document.getElementById('noticias-button').addEventListener('click', function() {
-            window.location.href = '#noticias'; // Se mueve a la sección de Noticias
-        });
-
-        // Redirigir al hacer clic en el botón "Ver más" para Noticias Recientes
-        document.getElementById('ver-mas-recientes').addEventListener('click', function() {
-            window.location.href = '#noticias'; // Mueve a la sección de Noticias
-        });
-
-        // Redirigir al hacer clic en el botón "Ver más" para Historias de Starbucks
-        document.getElementById('ver-mas-historias').addEventListener('click', function() {
-            window.location.href = '#historias'; // Mueve a la sección de Historias
-        });
-    </script>
 </body>
 </html>
+
