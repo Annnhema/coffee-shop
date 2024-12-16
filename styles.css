@@ -20,7 +20,7 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-/* Logo y botón Rewards juntos */
+/* Logo, menú y recompensas */
 header .logo-rewards {
     display: flex;
     align-items: center;
@@ -31,12 +31,13 @@ header .logo img {
     cursor: pointer;
 }
 
-.rewards-button a {
+header .menu-button a,
+header .rewards-button a {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     color: black;
-    margin-left: 20px; /* Espaciado entre el logo y el botón */
+    margin-left: 20px; /* Espaciado entre los botones */
 }
 
 nav ul {
@@ -45,7 +46,6 @@ nav ul {
     margin: 0;
 }
 
-nav ul.left-nav li,
 nav ul.right-nav li {
     margin: 0 15px;
 }
@@ -70,12 +70,14 @@ main {
     align-items: center;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 10px; /* Margen entre las imágenes */
 }
 
 .section-image {
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin: 0 1cm; /* Margen de 1 cm en los lados */
 }
 
 /* Sección de imágenes de noticias y promociones */
@@ -92,16 +94,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2%; /* Pequeña separación entre las imágenes */
+    margin-right: 1cm; /* Separación de 1 cm entre imágenes */
+}
+
+/* Para evitar que la última imagen tenga margen derecho */
+.image:last-child {
+    margin-right: 0;
 }
 
 .image-content {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-/* Para evitar que la última imagen tenga margen derecho */
-.image:last-child {
-    margin-right: 0;
 }
