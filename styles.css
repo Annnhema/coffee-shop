@@ -76,11 +76,11 @@ main {
 }
 
 .section-image {
-    width: 100%;
-    height: 100%;
+    width: calc(33.33% - 1cm); /* Ajustamos el tamaño de las imágenes y reducimos la separación */
+    height: 100%; 
     object-fit: cover;
-    margin-right: 2cm; /* Separación de 2 cm entre imágenes */
-    margin-left: 2cm;  /* Separación de 2 cm entre imágenes */
+    margin-right: 1cm; /* Separación de 1 cm entre imágenes */
+    margin-left: 1cm;  /* Separación de 1 cm entre imágenes */
 }
 
 /* Sección de imágenes de noticias y promociones */
@@ -92,13 +92,13 @@ main {
 }
 
 .image {
-    width: calc(50% - 1.5cm); /* Ajustar para que haya un pequeño margen entre las imágenes */
+    width: calc(50% - 1cm); /* Ajustar para que haya un pequeño margen entre las imágenes */
     height: 200px;
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1.5cm; /* Separación de 2 cm entre imágenes */
+    margin-right: 1cm; /* Separación de 1 cm entre imágenes */
 }
 
 /* Para evitar que la última imagen tenga margen derecho */
@@ -111,4 +111,3 @@ main {
     height: 100%;
     object-fit: cover;
 }
-
