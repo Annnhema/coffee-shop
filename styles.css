@@ -93,12 +93,22 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .info-box {
-    background-color: rgba(255, 182, 193, 0.5); /* Rosa claro */
+    background-color: rgba(255, 105, 180, 0.8); /* Rosa más fuerte para noticias */
     padding: 10px;
     text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.info-box.promo {
+    background-color: rgba(34, 193, 195, 0.8); /* Verde más fuerte para promociones */
 }
 
 .button {
@@ -116,10 +126,6 @@ main {
     width: 100%;
     height: auto;
     max-width: 100%; /* Esto hace que las imágenes se ajusten a su contenedor */
-}
-
-.images-section .image img {
-    max-width: 100%; /* Las imágenes no deben exceder el contenedor */
 }
 
 /* Ajustes de la sección "Planeta" */
@@ -158,4 +164,26 @@ main {
     text-decoration: none;
     border-radius: 5px;
 }
+
+/* Estilo para el icono de GPS y botones superiores */
+nav ul.right-nav li {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+nav ul.right-nav li a {
+    display: flex;
+    align-items: center;
+}
+
+nav ul.right-nav li i {
+    margin-right: 5px; /* Espaciado entre el icono y el texto */
+}
+
+/* Icono de GPS */
+nav ul.right-nav li.gps a {
+    color: black;
+}
+
 
