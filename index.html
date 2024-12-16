@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <header>
+        <div class="logo" onclick="goHome()">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="left-nav">
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Recompensas</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="#">Localizar Tienda</a></li>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Únete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secciones horizontales con imágenes -->
+    <main>
+        <section class="section" id="latte">
+            <img src="latte.jpg" alt="LATTE" class="section-image">
+        </section>
+        <section class="section" id="temporada">
+            <img src="temporada.jpg" alt="TEMPORADA" class="section-image">
+        </section>
+        <section class="section" id="cafe">
+            <img src="cafe.jpg" alt="CAFÉ" class="section-image">
+        </section>
+        <section class="section" id="rewards">
+            <img src="rewards.jpg" alt="REWARDS" class="section-image">
+        </section>
+        <section class="section" id="planeta">
+            <img src="planeta.jpg" alt="PLANETA" class="section-image">
+        </section>
+
+        <!-- Imágenes de noticias y promociones -->
+        <section class="images-section">
+            <div class="image" id="noticias">
+                <img src="noticias.jpg" alt="NOTICIAS" class="image-content">
+            </div>
+            <div class="image" id="promociones">
+                <img src="promociones.jpg" alt="PROMOCIONES" class="image-content">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
