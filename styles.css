@@ -78,7 +78,7 @@ main {
     width: calc(100% - 6cm); /* Restar el margen total (3cm a la izquierda y 3cm a la derecha) */
     height: auto;
     object-fit: cover;
-    margin: 0 3cm; /* Separación de 3 cm en los lados */
+    margin: 0 1.5cm; /* Separación de 3 cm en los lados */
 }
 
 /* Sección de imágenes de noticias y promociones */
@@ -96,7 +96,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2.5cm; /* Separación de 2.5 cm entre imágenes */
+    margin-right: 1; /* Separación de 2.5 cm entre imágenes */
 }
 
 /* Para evitar que la última imagen tenga margen derecho */
