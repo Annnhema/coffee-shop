@@ -11,6 +11,7 @@ body {
     color: black;
 }
 
+/* Estilo del Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -20,7 +21,6 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-/* Logo, menú y recompensas */
 header .logo-rewards {
     display: flex;
     align-items: center;
@@ -40,121 +40,43 @@ header .rewards-button a {
     margin-left: 20px; /* Espaciado entre los botones */
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-}
-
-nav ul.right-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-main {
-    margin-top: 30px;
-}
-
-/* Sección Horizontal: LATTE */
-.section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px; /* Margen entre las imágenes */
-}
-
-.section-image {
-    width: 100%;
-    height: auto;
-    max-width: 1752px;
-}
-
-/* Sección de Noticias y Promociones */
-.images-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 30px;
-    gap: 20px; /* Espacio entre las imágenes */
-}
-
-.image {
-    width: 48%; /* Se ajusta para que no ocupen todo el ancho */
-    background-color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.info-box {
-    background-color: rgba(255, 105, 180, 0.8); /* Rosa más fuerte para noticias */
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-}
-
-.info-box.promo {
-    background-color: rgba(3, 102, 53, 0.8); /* Verde más fuerte para promociones */
-}
-
-.button {
-    display: inline-block;
-    background-color: #3e8e41;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Para la página de noticias */
-#noticias {
-    padding: 30px;
-}
-
+/* Barra Rectangular de Noticias */
 .noticias-header {
     background-color: #036635; /* Verde Starbucks */
     color: white;
-    padding: 15px;
     text-align: center;
     font-size: 24px;
+    padding: 15px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
+/* Sección de Imágenes y Recuadros */
 .noticias-images {
     display: flex;
     justify-content: space-between;
-    gap: 1cm;
-    margin-bottom: 40px;
+    margin: 3cm 3cm 3cm 3cm; /* Margen de 3cm alrededor */
+    gap: 1cm; /* Espacio de 1cm entre las imágenes */
 }
 
 .noticias-image {
     width: 48%; /* Tamaño de las imágenes */
-    background-color: #e0e0e0;
     height: 200px;
+    background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
+.noticias-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Recuadros verdes debajo de las imágenes */
 .recuadro-noticias {
-    background-color: #036635;
+    background-color: #036635; /* Verde Starbucks */
     color: white;
     padding: 10px;
     text-align: center;
@@ -163,6 +85,7 @@ main {
     font-size: 16px;
 }
 
+/* Estilo de los enlaces y botones "Ver más" */
 .recuadro-noticias a {
     display: inline-block;
     background-color: white;
@@ -173,5 +96,12 @@ main {
     margin-top: 10px;
 }
 
-.notic
+.noticias-image .recuadro-noticias {
+    width: 100%; /* Ancho igual al de las imágenes */
+    height: 5cm; /* Altura de 5cm */
+}
 
+/* Asegurarse de que el contenido esté alineado y bien distribuido */
+main {
+    margin-top: 40px;
+}
