@@ -71,7 +71,7 @@ main {
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1cm; /* Margen entre las imágenes */
-    padding: 0 1cm; /* Margen de 1 cm a la izquierda y derecha de la sección */
+    padding: 0.1cm; /* Margen de 1 cm a la izquierda y derecha de la sección */
     flex-wrap: wrap; /* Permite que las imágenes se ajusten a varias filas si es necesario */
 }
 
