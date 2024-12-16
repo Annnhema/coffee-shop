@@ -71,13 +71,14 @@ main {
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px; /* Margen entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a varias filas si es necesario */
 }
 
 .section-image {
-    width: 100%;
+    width: calc(100% - 6cm); /* Restar el margen total (3cm a la izquierda y 3cm a la derecha) */
     height: auto;
     object-fit: cover;
-    margin: 0 2.5cm; /* Separación de 3 cm en los lados */
+    margin: 0 3cm; /* Separación de 3 cm en los lados */
 }
 
 /* Sección de imágenes de noticias y promociones */
@@ -85,16 +86,17 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 20px 30px;
+    flex-wrap: wrap; /* Asegura que las imágenes se ajusten en varias filas si es necesario */
 }
 
 .image {
-    width: 48%;
+    width: calc(50% - 3cm); /* Para las imágenes de la sección de noticias/promociones, reducir el tamaño y separar con margen */
     height: 200px;
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 3cm; /* Separación de 3 cm entre imágenes */
+    margin-right: 2.5cm; /* Separación de 2.5 cm entre imágenes */
 }
 
 /* Para evitar que la última imagen tenga margen derecho */
@@ -107,4 +109,3 @@ main {
     height: 100%;
     object-fit: cover;
 }
-
