@@ -84,20 +84,15 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 20px 30px;
+    gap: 20px; /* Espacio entre las imágenes */
 }
 
 .image {
-    width: 48%;
-    height: 200px;
+    width: 48%; /* Se ajusta para que no ocupen todo el ancho */
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2%; /* Separación entre imágenes */
-}
-
-.image:last-child {
-    margin-right: 0;
 }
 
 .info-box {
@@ -113,5 +108,54 @@ main {
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 
+    margin-top: 10px;
+}
+
+/* Margen adicional para separar las imágenes de "Noticias y Promociones" */
+.image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Esto hace que las imágenes se ajusten a su contenedor */
+}
+
+.images-section .image img {
+    max-width: 100%; /* Las imágenes no deben exceder el contenedor */
+}
+
+/* Ajustes de la sección "Planeta" */
+#planeta {
+    margin-top: 40px; /* Separación con las imágenes anteriores */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#planeta img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Recuadro verde con los títulos */
+.recent-stories-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 40px;
+}
+
+.recent,
+.stories {
+    width: 48%;
+}
+
+.recent a,
+.stories a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
