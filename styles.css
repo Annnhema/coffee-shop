@@ -173,33 +173,5 @@ main {
     margin-top: 10px;
 }
 
-.noticias-header, .recuadro-noticias {
-    width: 100%;
-}
-
-/* Para el logo */
-header .logo img {
-    cursor: pointer;
-}
-
-/* Icono de GPS */
-nav ul.right-nav li {
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
-}
-
-nav ul.right-nav li a {
-    display: flex;
-    align-items: center;
-}
-
-nav ul.right-nav li i {
-    margin-right: 5px; /* Espaciado entre el icono y el texto */
-}
-
-nav ul.right-nav li.gps a {
-    color: black;
-}
-
+.notic
 
