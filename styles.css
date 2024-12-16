@@ -71,14 +71,16 @@ main {
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1cm; /* Margen entre las imágenes */
+    padding: 0 1cm; /* Margen de 1 cm a la izquierda y derecha de la sección */
     flex-wrap: wrap; /* Permite que las imágenes se ajusten a varias filas si es necesario */
 }
 
 .section-image {
-    width: calc(100% - 4cm); /* Restar el margen total (2cm a la izquierda y 2cm a la derecha) */
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin: 0 1cm; /* Separación de 1 cm en los lados */
+    margin-right: 2.5cm; /* Separación de 2.5 cm entre imágenes */
+    margin-left: 2.5cm;  /* Separación de 2.5 cm entre imágenes */
 }
 
 /* Sección de imágenes de noticias y promociones */
