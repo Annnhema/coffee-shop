@@ -70,33 +70,33 @@ main {
     align-items: center;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 10px; /* Margen entre las imágenes */
+    margin-bottom: 1cm; /* Margen entre las imágenes */
     flex-wrap: wrap; /* Permite que las imágenes se ajusten a varias filas si es necesario */
 }
 
 .section-image {
-    width: calc(100% - 6cm); /* Restar el margen total (3cm a la izquierda y 3cm a la derecha) */
+    width: calc(100% - 4cm); /* Restar el margen total (2cm a la izquierda y 2cm a la derecha) */
     height: auto;
     object-fit: cover;
-    margin: 0 1.5cm; /* Separación de 3 cm en los lados */
+    margin: 0 1cm; /* Separación de 1 cm en los lados */
 }
 
 /* Sección de imágenes de noticias y promociones */
 .images-section {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 1cm; /* Añadir margen de 1 cm en los contenedores */
     flex-wrap: wrap; /* Asegura que las imágenes se ajusten en varias filas si es necesario */
 }
 
 .image {
-    width: calc(50% - 3cm); /* Para las imágenes de la sección de noticias/promociones, reducir el tamaño y separar con margen */
+    width: calc(50% - 2cm); /* Para las imágenes de la sección de noticias/promociones, reducir el tamaño y separar con margen */
     height: 200px;
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1; /* Separación de 2.5 cm entre imágenes */
+    margin-right: 1cm; /* Separación de 1 cm entre imágenes */
 }
 
 /* Para evitar que la última imagen tenga margen derecho */
