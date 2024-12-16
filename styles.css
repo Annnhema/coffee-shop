@@ -1,66 +1,3 @@
-/* Resetting some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: white;
-    border-bottom: 1px solid #ccc;
-}
-
-/* Logo, menú y recompensas */
-header .logo-rewards {
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    width: 100px;
-    cursor: pointer;
-}
-
-header .menu-button a,
-header .rewards-button a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-    margin-left: 20px; /* Espaciado entre los botones */
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-}
-
-nav ul.right-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-main {
-    margin-top: 30px;
-}
-
 /* Secciones horizontales con imágenes */
 .section {
     width: 100%;
@@ -76,11 +13,11 @@ main {
 }
 
 .section-image {
-    width: calc(33.33% - 1cm); /* Ajustamos el tamaño de las imágenes y reducimos la separación */
-    height: auto; /* Altura automática para mantener la proporción */
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin perder proporción */
-    margin-right: 1cm; /* Separación de 1 cm entre imágenes */
-    margin-left: 1cm;  /* Separación de 1 cm entre imágenes */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 2cm; /* Separación de 2 cm entre imágenes */
+    margin-left: 2cm;  /* Separación de 2 cm entre imágenes */
 }
 
 /* Sección de imágenes de noticias y promociones */
@@ -92,13 +29,13 @@ main {
 }
 
 .image {
-    width: calc(50% - 1cm); /* Ajustar para que haya un pequeño margen entre las imágenes */
-    height: 200px; /* Ajuste de altura fija para las imágenes de noticias/promociones */
+    width: calc(50% - 1.5cm); /* Ajustar para que haya un pequeño margen entre las imágenes */
+    height: 200px;
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1cm; /* Separación de 1 cm entre imágenes */
+    margin-right: 1.5cm; /* Separación de 2 cm entre imágenes */
 }
 
 /* Para evitar que la última imagen tenga margen derecho */
@@ -109,6 +46,5 @@ main {
 .image-content {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Asegura que la imagen se ajusta sin perder proporción */
+    object-fit: cover;
 }
-
