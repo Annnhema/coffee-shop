@@ -77,8 +77,8 @@ main {
 
 .section-image {
     width: calc(33.33% - 1cm); /* Ajustamos el tamaño de las imágenes y reducimos la separación */
-    height: 100%; /* Ocupa el 100% de la altura del contenedor */
-    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin perder proporción */
     margin-right: 1cm; /* Separación de 1 cm entre imágenes */
     margin-left: 1cm;  /* Separación de 1 cm entre imágenes */
 }
@@ -93,7 +93,7 @@ main {
 
 .image {
     width: calc(50% - 1cm); /* Ajustar para que haya un pequeño margen entre las imágenes */
-    height: 200px; /* Aseguramos que la imagen se mantenga dentro de un tamaño razonable */
+    height: 200px; /* Ajuste de altura fija para las imágenes de noticias/promociones */
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
@@ -109,6 +109,6 @@ main {
 .image-content {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+    object-fit: contain; /* Asegura que la imagen se ajusta sin perder proporción */
 }
 
