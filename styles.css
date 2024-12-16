@@ -61,7 +61,7 @@ main {
     margin-top: 30px;
 }
 
-/* Secciones horizontales con imágenes */
+/* Sección Horizontal: LATTE */
 .section {
     width: 100%;
     height: 100vh;
@@ -76,7 +76,7 @@ main {
 .section-image {
     width: 100%;
     height: auto;
-    max-width: 1752px; /* O ajusta al tamaño máximo que deseas */
+    max-width: 1752px;
 }
 
 /* Sección de Noticias y Promociones */
@@ -108,7 +108,7 @@ main {
 }
 
 .info-box.promo {
-    background-color: rgba(34, 193, 195, 0.8); /* Verde más fuerte para promociones */
+    background-color: rgba(3, 102, 53, 0.8); /* Verde más fuerte para promociones */
 }
 
 .button {
@@ -121,51 +121,68 @@ main {
     margin-top: 10px;
 }
 
-/* Margen adicional para separar las imágenes de "Noticias y Promociones" */
-.image img {
+/* Para la página de noticias */
+#noticias {
+    padding: 30px;
+}
+
+.noticias-header {
+    background-color: #036635; /* Verde Starbucks */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
     width: 100%;
-    height: auto;
-    max-width: 100%; /* Esto hace que las imágenes se ajusten a su contenedor */
+    margin-bottom: 40px;
 }
 
-/* Ajustes de la sección "Planeta" */
-#planeta {
-    margin-top: 40px; /* Separación con las imágenes anteriores */
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#planeta img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Recuadro verde con los títulos */
-.recent-stories-box {
+.noticias-images {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
-    margin-top: 40px;
+    gap: 1cm;
+    margin-bottom: 40px;
 }
 
-.recent,
-.stories {
-    width: 48%;
+.noticias-image {
+    width: 48%; /* Tamaño de las imágenes */
+    background-color: #e0e0e0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.recent a,
-.stories a {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #3e8e41;
+.recuadro-noticias {
+    background-color: #036635;
     color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.recuadro-noticias a {
+    display: inline-block;
+    background-color: white;
+    color: #036635;
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
-/* Estilo para el icono de GPS y botones superiores */
+.noticias-header, .recuadro-noticias {
+    width: 100%;
+}
+
+/* Para el logo */
+header .logo img {
+    cursor: pointer;
+}
+
+/* Icono de GPS */
 nav ul.right-nav li {
     display: flex;
     align-items: center;
@@ -181,7 +198,6 @@ nav ul.right-nav li i {
     margin-right: 5px; /* Espaciado entre el icono y el texto */
 }
 
-/* Icono de GPS */
 nav ul.right-nav li.gps a {
     color: black;
 }
