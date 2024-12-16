@@ -3,59 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
+    <title>Página Principal - Starbucks</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Barra superior -->
-    <header>
-        <div class="logo-rewards">
-            <div class="logo" onclick="goHome()">
-                <img src="logo.jpg" alt="Logo">
-            </div>
-            <div class="menu-button">
-                <a href="#">Menú</a>
-            </div>
-            <div class="rewards-button">
-                <a href="#">Recompensas</a>
-            </div>
+<header>
+    <div class="logo-rewards">
+        <div class="logo" onclick="goHome()">
+            <img src="logo.jpg" alt="Logo Starbucks">
         </div>
-        <nav>
-            <ul class="right-nav">
-                <li><a href="#">Localizar Tienda</a></li>
-                <li><a href="#">Ingresar</a></li>
-                <li><a href="#">Únete</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="menu-button">
+            <a href="#menu">Menú</a>
+        </div>
+        <div class="rewards-button">
+            <a href="#rewards">Recompensas</a>
+        </div>
+    </div>
+    <nav>
+        <ul class="right-nav">
+            <li><a href="#store">Localizar Tienda</a></li>
+            <li><a href="#login">Ingresar</a></li>
+            <li><a href="#join">Únete</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Secciones horizontales con imágenes -->
-    <main>
-        <section class="section" id="latte">
-            <img src="LATTE (2).png" alt="LATTE" class="section-image">
-        </section>
-        <section class="section" id="temporada">
-            <img src="temporada.png" alt="TEMPORADA" class="section-image">
-        </section>
-        <section class="section" id="cafe">
-            <img src="cafe (2).png" alt="CAFÉ" class="section-image">
-        </section>
-        <section class="section" id="planeta">
-            <img src="Planeta (2).png" alt="PLANETA" class="section-image">
-        </section>
+<main>
+    <section id="latte" class="section">
+        <div class="section-image">
+            <img src="latte.png" alt="Latte">
+        </div>
+    </section>
 
-        <!-- Imágenes de noticias y promociones -->
-        <section class="images-section">
-            <div class="image" id="noticias">
-                <img src="noticias.png" alt="NOTICIAS" class="image-content">
+    <!-- Sección Noticias y Promociones -->
+    <section id="news-promotions" class="images-section">
+        <!-- Noticias -->
+        <div class="image">
+            <img src="noticias.png" alt="Noticias">
+            <div class="info-box">
+                <p>Consulta los eventos más recientes</p>
             </div>
-            <div class="image" id="promociones">
-                <img src="promociones.png" alt="PROMOCIONES" class="image-content">
+            <a href="noticias.html" class="button">Aquí</a>
+        </div>
+        <!-- Promociones -->
+        <div class="image">
+            <img src="promociones.png" alt="Promociones">
+            <div class="info-box">
+                <p>Consulta las historias de Starbucks</p>
             </div>
-        </section>
-    </main>
+            <a href="historias.html" class="button">Aquí</a>
+        </div>
+    </section>
+</main>
 
-    <script src="script.js"></script>
+<script>
+    function goHome() {
+        window.location.href = "#latte"; // Cambiar la URL según sea necesario
+    }
+</script>
+
 </body>
 </html>
