@@ -87,7 +87,7 @@ main {
 .images-section {
     display: flex;
     justify-content: space-between;
-    padding: 1cm; /* Añadir margen de 1 cm en los contenedores */
+    padding: 0.1cm; /* Añadir margen de 1 cm en los contenedores */
     flex-wrap: wrap; /* Asegura que las imágenes se ajusten en varias filas si es necesario */
 }
 
