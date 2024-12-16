@@ -20,9 +20,23 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+/* Logo y botón Rewards juntos */
+header .logo-rewards {
+    display: flex;
+    align-items: center;
+}
+
 header .logo img {
     width: 100px;
     cursor: pointer;
+}
+
+.rewards-button a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    margin-left: 20px; /* Espaciado entre el logo y el botón */
 }
 
 nav ul {
@@ -78,10 +92,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2%; /* Pequeña separación entre las imágenes */
 }
 
 .image-content {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Para evitar que la última imagen tenga margen derecho */
+.image:last-child {
+    margin-right: 0;
 }
