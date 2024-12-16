@@ -61,63 +61,57 @@ main {
     margin-top: 30px;
 }
 
-/* Sección de imágenes de noticias y promociones */
+/* Secciones horizontales con imágenes */
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px; /* Margen entre las imágenes */
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    max-width: 1752px; /* O ajusta al tamaño máximo que deseas */
+}
+
+/* Sección de Noticias y Promociones */
 .images-section {
     display: flex;
     justify-content: space-between;
-    padding: 1cm;
-    flex-wrap: wrap;
+    padding: 20px 30px;
 }
 
 .image {
-    width: calc(50% - 1cm);
-    height: auto;
+    width: 48%;
+    height: 200px;
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1cm;
-    text-align: center;
+    margin-right: 2%; /* Separación entre imágenes */
 }
 
 .image:last-child {
     margin-right: 0;
 }
 
-/* Estilo para imágenes cuadradas (Noticias y Promociones) */
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 1; /* Mantener la proporción cuadrada */
-}
-
-/* Recámara rosa debajo de las imágenes */
 .info-box {
-    background-color: #F8B9D4; /* Rosa claro */
-    width: 100%;
+    background-color: rgba(255, 182, 193, 0.5); /* Rosa claro */
     padding: 10px;
     text-align: center;
-    margin-top: 10px;
-    border-radius: 5px;
 }
 
-.info-box p {
-    font-size: 14px; /* Tamaño de texto pequeño */
-    color: #333;
-}
-
-/* Botón "Aquí" */
 .button {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #3e8e41;
     color: white;
-    text-decoration: none;
     padding: 10px;
-    margin-top: 10px;
+    text-decoration: none;
     border-radius: 5px;
-}
+    margin-top: 
 
-.button:hover {
-    background-color: #45a049;
-}
