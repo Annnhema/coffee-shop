@@ -3,65 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal - Starbucks</title>
+    <title>Starbucks</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <div class="logo-rewards">
-        <div class="logo" onclick="goHome()">
-            <img src="logo.jpg" alt="Logo Starbucks">
-        </div>
-        <div class="menu-button">
-            <a href="#menu">Menú</a>
-        </div>
-        <div class="rewards-button">
-            <a href="#rewards">Recompensas</a>
-        </div>
-    </div>
-    <nav>
-        <ul class="right-nav">
-            <li><a href="#store">Localizar Tienda</a></li>
-            <li><a href="#login">Ingresar</a></li>
-            <li><a href="#join">Únete</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section id="latte" class="section">
-        <div class="section-image">
-            <img src="latte.png" alt="Latte">
-        </div>
-    </section>
-
-    <!-- Sección Noticias y Promociones -->
-    <section id="news-promotions" class="images-section">
-        <!-- Noticias -->
-        <div class="image">
-            <img src="noticias.png" alt="Noticias">
-            <div class="info-box">
-                <p>Consulta los eventos más recientes</p>
+    <header>
+        <div class="logo-rewards">
+            <div class="logo">
+                <img src="logo.jpg" alt="Starbucks Logo" onclick="goHome()">
             </div>
-            <a href="noticias.html" class="button">Aquí</a>
-        </div>
-        <!-- Promociones -->
-        <div class="image">
-            <img src="promociones.png" alt="Promociones">
-            <div class="info-box">
-                <p>Consulta las historias de Starbucks</p>
+            <div class="menu-button">
+                <a href="#menu">Menú</a>
             </div>
-            <a href="historias.html" class="button">Aquí</a>
+            <div class="rewards-button">
+                <a href="#rewards">Recompensas</a>
+            </div>
         </div>
-    </section>
-</main>
+        <nav>
+            <ul>
+                <li><a href="#localizar">Localizar tienda</a></li>
+                <li><a href="#ingresar">Ingresar</a></li>
+                <li><a href="#unete">Únete</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<script>
-    function goHome() {
-        window.location.href = "#latte"; // Cambiar la URL según sea necesario
-    }
-</script>
+    <main>
+        <!-- Sección de Noticias y Promociones -->
+        <div class="images-section">
+            <div class="image">
+                <img src="noticias.png" alt="Noticias">
+                <div class="info-box">
+                    <p>Consulta los eventos más recientes.</p>
+                    <a href="#noticias" class="button">Aquí</a> <!-- Redirige a la sección de Noticias en la misma página -->
+                </div>
+            </div>
 
+            <div class="image">
+                <img src="promociones.png" alt="Promociones">
+                <div class="info-box">
+                    <p>Consulta las promociones más recientes.</p>
+                    <a href="#promociones" class="button">Aquí</a> <!-- Redirige a la sección de Promociones -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Noticias (Ancla #noticias) -->
+        <section id="noticias">
+            <div class="image">
+                <img src="Noticias.jpg" alt="Noticias">
+                <div class="info-box">
+                    <p>Consulta las noticias más recientes de Starbucks.</p>
+                    <a href="#noticias" class="button">Ver más</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <p>Consulta los eventos más recientes.</p>
+            </div>
+        </section>
+
+        <!-- Sección Historias (Ancla #historias) -->
+        <section id="historias">
+            <div class="image">
+                <img src="Historias.jpg" alt="Historias">
+                <div class="info-box">
+                    <p>Consulta las historias más recientes de Starbucks.</p>
+                    <a href="#historias" class="button">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Noticias y Promociones (Botones) -->
+        <div class="images-section">
+            <div class="image">
+                <img src="recientes.png" alt="Recientes">
+                <div class="info-box">
+                    <p>Consulta los eventos más recientes.</p>
+                    <a href="#noticias" class="button">Ver más</a> <!-- Redirige a la sección de Noticias -->
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="historias.png" alt="Historias">
+                <div class="info-box">
+                    <p>Consulta las historias más recientes de Starbucks.</p>
+                    <a href="#historias" class="button">Ver más</a> <!-- Redirige a la sección de Historias -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Función para redirigir al hacer clic en "Aquí" (Noticias)
+        document.getElementById('noticias-button').addEventListener('click', function() {
+            window.location.href = '#noticias'; // Se mueve a la sección de Noticias
+        });
+
+        // Redirigir al hacer clic en el botón "Ver más" para Noticias Recientes
+        document.getElementById('ver-mas-recientes').addEventListener('click', function() {
+            window.location.href = '#noticias'; // Mueve a la sección de Noticias
+        });
+
+        // Redirigir al hacer clic en el botón "Ver más" para Historias de Starbucks
+        document.getElementById('ver-mas-historias').addEventListener('click', function() {
+            window.location.href = '#historias'; // Mueve a la sección de Historias
+        });
+    </script>
 </body>
 </html>
