@@ -150,16 +150,24 @@ main {
 }
 
 /* Estilo para los botones "Localizar tienda", "Ingresar" y "Unirse" */
-header .other-buttons a {
-    background-color: #f0f0f0;
-    color: #036635;
+header .gps a, 
+header .ingresar-button a,
+header .unirse-button a {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #036635; /* Color verde Starbucks */
     padding: 10px 20px;
     border-radius: 25px;
     margin: 0 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
 }
 
-header .other-buttons a:hover {
-    background-color: #036635;
-    color: white;
+header .gps a:hover, 
+header .ingresar-button a:hover,
+header .unirse-button a:hover {
+    background-color: #036635; /* Fondo verde */
+    color: white; /* Texto blanco */
 }
+
 
