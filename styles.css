@@ -125,10 +125,11 @@ header .other-buttons a:hover {
     background-color: #d74b9d; /* Rosa fuerte */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-top: 10px;
 }
 
+/* Estilo para los botones dentro de los recuadros */
 .info-box.promo .button {
     background-color: #36b73f; /* Verde fuerte */
 }
