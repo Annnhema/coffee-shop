@@ -12,3 +12,8 @@ document.getElementById('ver-mas-recientes').addEventListener('click', function(
 document.getElementById('ver-mas-historias').addEventListener('click', function() {
     window.location.href = 'historias.html'; // Cambiar 'historias.html' al archivo adecuado
 });
+
+// Redirigir al hacer clic en el botón "Rewards"
+document.getElementById('rewards-button').addEventListener('click', function() {
+    window.location.href = 'rewards.html'; // Cambiar 'rewards.html' al archivo adecuado
+});
