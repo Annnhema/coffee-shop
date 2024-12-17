@@ -32,18 +32,10 @@ header .logo img {
     cursor: pointer;
 }
 
+/* Estilo de los botones de la barra superior (Menu, Rewards, Localizar Tienda, Ingresar, Unirse) */
 header .menu-button a,
-header .rewards-button a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-    margin-left: 20px; /* Espaciado entre los botones */
-}
-
-/* Estilo de los botones de la barra superior (Ubicación, Ingresar, Unirse) */
-header .menu-button a,
-header .rewards-button a {
+header .rewards-button a,
+header .other-buttons a {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -51,22 +43,33 @@ header .rewards-button a {
     background-color: #f0f0f0;
     color: #036635;
     text-align: center;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+/* Estilo de los botones cuando se pasa el ratón */
 header .menu-button a:hover,
-header .rewards-button a:hover {
+header .rewards-button a:hover,
+header .other-buttons a:hover {
     background-color: #036635;
     color: white;
 }
 
-/* Estilo del botón "Ingresar" y "Unirse" */
-header .menu-button a {
+/* Estilo específico para el botón "Ingresar" */
+header .ingresar-button a {
     background-color: #036635; /* Botón de color verde */
     color: white;
 }
 
-header .rewards-button a {
+/* Estilo específico para el botón "Unirse" */
+header .unirse-button a {
     background-color: black; /* Botón de color negro */
+    color: white;
+}
+
+/* Estilo específico para el botón "Localizar Tienda" */
+header .localizar-button a {
+    background-color: #036635; /* Botón verde para localizar tienda */
     color: white;
 }
 
