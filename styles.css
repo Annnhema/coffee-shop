@@ -121,7 +121,7 @@ header .other-buttons a:hover {
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 10px; /* Reducido el tamaño del botón */
     background-color: #d74b9d; /* Rosa fuerte */
     color: white;
     text-decoration: none;
@@ -355,4 +355,3 @@ header .unirse-button a:hover {
     background-color: #036635;
     color: white;
 }
-
