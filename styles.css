@@ -74,7 +74,7 @@ header .other-buttons a:hover {
 }
 
 .section img {
-    max-width: 90%; /* Ajusta el ancho máximo de las imágenes */
+    max-width: 95%; /* Aumentamos un poco el tamaño de las imágenes */
     height: auto;
     margin: 0 auto; /* Centra la imagen */
 }
@@ -162,3 +162,4 @@ header .other-buttons a:hover {
     background-color: #036635;
     color: white;
 }
+
