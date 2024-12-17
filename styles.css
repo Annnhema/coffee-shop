@@ -66,6 +66,19 @@ header .other-buttons a:hover {
     margin-top: 20px;
 }
 
+/* Sección de Imágenes Horizontales */
+.section {
+    margin: 2cm 0; /* Asegura que haya espacio alrededor */
+    width: 100%;
+    text-align: center;
+}
+
+.section img {
+    max-width: 90%; /* Ajusta el ancho máximo de las imágenes */
+    height: auto;
+    margin: 0 auto; /* Centra la imagen */
+}
+
 /* Sección de Imágenes y Recuadros */
 .images-section {
     display: flex;
@@ -89,13 +102,13 @@ header .other-buttons a:hover {
     height: auto;
 }
 
-/* Recuadros debajo de las imágenes */
+/* Recuadros debajo de las imágenes (más largos) */
 .info-box {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 30px 20px; /* Aumentar el padding para hacerlo más largo */
     text-align: center;
     background-color: #f7c5d3; /* Rosa para Noticias */
     font-size: 16px;
@@ -119,16 +132,16 @@ header .other-buttons a:hover {
     background-color: #36b73f; /* Verde fuerte */
 }
 
-/* Recuadro verde debajo de las imágenes */
+/* Recuadro verde debajo de las imágenes (más largo) */
 .recuadro-noticias {
     background-color: #036635; /* Verde Starbucks */
     color: white;
-    padding: 10px;
+    padding: 20px 10px; /* Aumentar el padding para hacerlo más largo */
     text-align: center;
     margin-top: 10px;
     width: 100%;
     font-size: 16px;
-    height: 50px;
+    height: 70px; /* Aumentar la altura del recuadro */
 }
 
 /* Asegurarse de que el contenido esté alineado y bien distribuido */
