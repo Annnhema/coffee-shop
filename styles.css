@@ -241,3 +241,74 @@ header .unirse-button a:hover {
 .promo .button {
     margin-top: 1.5cm; /* Añadir separación entre las imágenes y los botones */
 }
+
+/* Nuevos estilos para la sección de Noticias */
+
+/* Sección de Noticias */
+.noticias-header {
+    background-color: #036635; /* Verde Starbucks */
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Sección de Imágenes */
+.noticias-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.noticias-image {
+    position: relative;
+    width: 48%; /* Ajuste para dos imágenes alineadas */
+}
+
+.noticias-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recuadro-noticias {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.recuadro-noticias p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: #036635; /* Color de Starbucks */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #02733d; /* Cambio de color al pasar el cursor */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .noticias-images {
+        flex-direction: column;
+    }
+
+    .noticias-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
