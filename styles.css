@@ -242,3 +242,20 @@ header .unirse-button a:hover {
     width: 100%;
     text-align: center;
 }
+
+/* Estilo de Rewards - Restaurado */
+header .rewards-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: #036635; /* Verde Starbucks */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .rewards-button a:hover {
+    background-color: #024b32; /* Verde más oscuro al pasar el ratón */
+}
