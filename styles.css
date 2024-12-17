@@ -35,9 +35,7 @@ header .logo img {
 /* Estilo de los botones de la barra superior (Menu, Rewards, Localizar Tienda, Ingresar, Unirse) */
 header .menu-button a,
 header .rewards-button a,
-header .localizar-button a,
-header .ingresar-button a,
-header .unirse-button a {
+header .other-buttons a {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -52,28 +50,8 @@ header .unirse-button a {
 /* Estilo de los botones cuando se pasa el ratón */
 header .menu-button a:hover,
 header .rewards-button a:hover,
-header .localizar-button a:hover,
-header .ingresar-button a:hover,
-header .unirse-button a:hover {
+header .other-buttons a:hover {
     background-color: #036635;
-    color: white;
-}
-
-/* Estilo específico para el botón "Ingresar" */
-header .ingresar-button a {
-    background-color: #036635; /* Botón de color verde */
-    color: white;
-}
-
-/* Estilo específico para el botón "Unirse" */
-header .unirse-button a {
-    background-color: black; /* Botón de color negro */
-    color: white;
-}
-
-/* Estilo específico para el botón "Localizar Tienda" */
-header .localizar-button a {
-    background-color: #036635; /* Botón verde para localizar tienda */
     color: white;
 }
 
@@ -111,36 +89,37 @@ header .localizar-button a {
     height: auto;
 }
 
-/* Caja de Información debajo de las imágenes */
+/* Recuadros debajo de las imágenes */
 .info-box {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
     text-align: center;
+    background-color: #f7c5d3; /* Rosa para Noticias */
+    font-size: 16px;
 }
 
-.info-box p {
-    margin-bottom: 10px;
+.info-box.promo {
+    background-color: #d3f7c5; /* Verde para Promociones */
 }
 
-.info-box .button {
-    background-color: white;
-    color: #036635;
-    padding: 10px;
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d74b9d; /* Rosa fuerte */
+    color: white;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
-.info-box .button:hover {
-    background-color: #036635;
-    color: white;
+.info-box.promo .button {
+    background-color: #36b73f; /* Verde fuerte */
 }
 
-/* Recuadros verdes debajo de las imágenes */
+/* Recuadro verde debajo de las imágenes */
 .recuadro-noticias {
     background-color: #036635; /* Verde Starbucks */
     color: white;
@@ -149,25 +128,24 @@ header .localizar-button a {
     margin-top: 10px;
     width: 100%;
     font-size: 16px;
-}
-
-/* Estilo de los enlaces y botones "Ver más" */
-.recuadro-noticias a {
-    display: inline-block;
-    background-color: white;
-    color: #036635;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.noticias-image .recuadro-noticias {
-    width: 100%; /* Ancho igual al de las imágenes */
-    height: 5cm; /* Altura de 5cm */
+    height: 50px;
 }
 
 /* Asegurarse de que el contenido esté alineado y bien distribuido */
 main {
     margin-top: 40px;
+}
+
+/* Estilo para los botones "Localizar tienda", "Ingresar" y "Unirse" */
+header .other-buttons a {
+    background-color: #f0f0f0;
+    color: #036635;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+header .other-buttons a:hover {
+    background-color: #036635;
+    color: white;
 }
