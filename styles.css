@@ -1,4 +1,4 @@
-/* Resetting some default styles */ 
+Resetting some default styles */ 
 * {
     margin: 0;
     padding: 0;
@@ -121,7 +121,7 @@ header .other-buttons a:hover {
 
 .button {
     display: inline-block;
-    padding: 5px 10px; /* Reducido el tamaño del botón */
+    padding: 10px 20px;
     background-color: #d74b9d; /* Rosa fuerte */
     color: white;
     text-decoration: none;
@@ -311,47 +311,4 @@ header .unirse-button a:hover {
         width: 100%;
         margin-bottom: 20px;
     }
-}
-
-/* Estilo para la parte izquierda con el rectángulo verde */
-.rewards-left {
-    width: 50%;
-    background-color: #036635; /* Verde Starbucks */
-    color: white;
-    padding: 30px;
-    font-size: 24px;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Permite que los elementos se apilen verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-    height: 100%; /* Asegura que la sección ocupe toda la altura disponible */
-}
-
-.rewards-left h2 {
-    margin-bottom: 20px;
-}
-
-.rewards-left .buttons {
-    display: flex;
-    flex-direction: column; /* Apila los botones verticalmente */
-    gap: 10px; /* Espacio entre los botones */
-    align-items: center; /* Centra los botones horizontalmente */
-}
-
-.rewards-left .join-now, .rewards-left .sign-in {
-    background-color: white;
-    color: #036635;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    width: 80%; /* Asegura que los botones no sean demasiado grandes */
-    max-width: 250px; /* Establece un ancho máximo para los botones */
-}
-
-.rewards-left .join-now:hover, .rewards-left .sign-in:hover {
-    background-color: #036635;
-    color: white;
 }
