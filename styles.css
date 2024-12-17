@@ -9,10 +9,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
     color: black;
-    margin-left: 1cm; /* Agregar margen izquierdo de 1cm */
+    margin-left: 1cm; /* Margen izquierdo de 1cm */
 }
 
-/* Estilo del Header */
+/* Header común para las tres páginas */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,107 @@ header .logo img {
     cursor: pointer;
 }
 
-/* Estilo de los botones de la barra superior (Menu, Rewards, Localizar Tienda, Ingresar, Unirse) */
+/* Estilo de los botones de navegación */
+header .menu-button a,
+header .rewards-button a,
+header .other-buttons a,
+header .join-button a, /* Botones "Unirse" y "Ingresar" */
+header .login-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    color: #036635;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu-button a:hover,
+header .rewards-button a:hover,
+header .other-buttons a:hover,
+header .join-button a:hover,
+header .login-button a:hover {
+    background-color: #036635;
+    color: white;
+}
+
+/* --- Página de rewards (rewards.html) --- */
+
+/* Contenedor para la página de rewards */
+.rewards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Estilo del área verde que aparece en la mitad izquierda */
+.green-box {
+    background-color: #31372b; /* Verde que has mencionado */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    width: 50%; /* Ocupar la mitad izquierda */
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px; /* Opcional: borde redondeado */
+}
+
+.rewards-left {
+    width: 50%; /* Asegura que ocupe la mitad izquierda */
+}
+
+.rewards-left .join-button,
+.rewards-left .login-button {
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes en la mitad derecha */
+.rewards-right {
+    width: 50%; /* La mitad derecha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rewards-right iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    border: none;
+}
+
+/* --- Página de noticias (noticias.html) --- */
+
+/* Estilo del área verde en noticias */
+.green-box {
+    background-color: #31372b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* --- Página principal (index.html) --- */
+
+/* Estilo para el logo y los botones en la página principal */
+header .logo-rewards {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Estilo común para botones de navegación */
 header .menu-button a,
 header .rewards-button a,
 header .other-buttons a {
@@ -47,7 +147,6 @@ header .other-buttons a {
     font-weight: bold;
 }
 
-/* Estilo de los botones cuando se pasa el ratón */
 header .menu-button a:hover,
 header .rewards-button a:hover,
 header .other-buttons a:hover {
@@ -55,9 +154,30 @@ header .other-buttons a:hover {
     color: white;
 }
 
-/* Barra Rectangular de Noticias */
-.noticias-header {
-    background-color: #036635; /* Verde Starbucks */
+/* --- Estilo para los botones "Unirse" y "Ingresar" --- */
+.join-button a,
+.login-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    background-color: #036635;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.join-button a:hover,
+.login-button a:hover {
+    background-color: #028230;
+}
+
+/* --- Página de recompensas (rewards.html) --- */
+
+/* Estilo para la sección de recompensas */
+.rewards-header {
+    background-color: #036635;
     color: white;
     text-align: center;
     font-size: 24px;
@@ -66,161 +186,27 @@ header .other-buttons a:hover {
     margin-top: 20px;
 }
 
-/* Sección de Imágenes Horizontales */
-.section {
-    margin: 2cm 0; /* Asegura que haya espacio alrededor */
-    width: 100%;
+.rewards-content {
+    margin: 2cm 0;
     text-align: center;
 }
 
-.section img {
-    max-width: 95%; /* Aumentamos un poco el tamaño de las imágenes */
+.rewards-content img {
+    max-width: 100%;
     height: auto;
-    margin: 0 auto; /* Centra la imagen */
+    margin: 0 auto;
 }
 
-/* Sección de Imágenes y Recuadros */
-.images-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 3cm 3cm 3cm 3cm; /* Margen de 3cm alrededor */
-    gap: 1cm; /* Espacio de 1cm entre las imágenes */
-}
-
-.image {
-    width: calc(50% - 0.5cm); /* Asegura que las imágenes estén lado a lado con un margen */
-    height: auto;
-    background-color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-}
-
-/* Recuadros debajo de las imágenes (más largos) */
-.info-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 20px; /* Aumentar el padding para hacerlo más largo */
-    text-align: center;
-    background-color: #f7c5d3; /* Rosa para Noticias */
-    font-size: 16px;
-}
-
-.info-box.promo {
-    background-color: #d3f7c5; /* Verde para Promociones */
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d74b9d; /* Rosa fuerte */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.info-box.promo .button {
-    background-color: #36b73f; /* Verde fuerte */
-}
-
-/* Recuadro verde debajo de las imágenes (más largo) */
-.recuadro-noticias {
-    background-color: #036635; /* Verde Starbucks */
-    color: white;
-    padding: 20px 10px; /* Aumentar el padding para hacerlo más largo */
-    text-align: center;
-    margin-top: 10px;
-    width: 100%;
-    font-size: 16px;
-    height: 70px; /* Aumentar la altura del recuadro */
-}
-
-/* Asegurarse de que el contenido esté alineado y bien distribuido */
-main {
-    margin-top: 40px;
-}
-
-/* Estilo para los botones "Localizar tienda", "Ingresar" y "Unirse" */
-header .gps a, 
-header .ingresar-button a,
-header .unirse-button a {
-    background-color: #f0f0f0; /* Fondo gris claro */
-    color: #036635; /* Color verde Starbucks */
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 0 10px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-}
-
-header .gps a:hover, 
-header .ingresar-button a:hover,
-header .unirse-button a:hover {
-    background-color: #036635; /* Fondo verde */
-    color: white; /* Texto blanco */
-}
-
-/* Estilo específico para la página Rewards */
-.rewards-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-
-.rewards-left {
-    width: 50%;
-    background-color: #036635; /* Verde Starbucks */
-    color: white;
-    padding: 30px;
-    font-size: 24px;
-    text-align: center;
-}
-
-.rewards-left h1 {
-    margin-bottom: 20px;
-}
-
-.rewards-left .join-now, .rewards-left .sign-in {
-    background-color: white;
-    color: #036635;
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 10px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.rewards-left .join-now:hover, .rewards-left .sign-in:hover {
+.rewards-button {
     background-color: #036635;
     color: white;
-}
-
-/* Estilo para la parte derecha con las 5 imágenes */
-.rewards-right {
-    width: 50%;
-    overflow-y: auto; /* Permite desplazarse si hay mucho contenido */
-    height: 100vh; /* Altura completa */
-}
-
-.rewards-right img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-/* Estilo para el video */
-.rewards-right video {
-    width: 100%;
-    height: auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
     margin-top: 20px;
+    text-decoration: none;
+}
+
+.rewards-button:hover {
+    background-color: #028230;
 }
