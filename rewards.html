@@ -4,96 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks Rewards</title>
-    <style>
-        /* Estilo general */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-
-        /* Contenedor principal */
-        .rewards-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Estilo para cada sección */
-        .reward-item {
-            margin: 10px;
-            max-width: 200px;
-        }
-
-        .reward-item img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .reward-item p {
-            margin-top: 8px;
-            font-size: 14px;
-            color: #333;
-        }
-
-        /* Estilo del video */
-        .reward-video {
-            margin: 20px auto;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        .reward-video video {
-            width: 100%;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Contenido principal -->
-    <div class="rewards-container">
-        <!-- Primera sección: Únete -->
-        <div class="reward-item">
-            <img src="unete.png" alt="Únete a Starbucks Rewards">
-            <p>Únete a Starbucks Rewards</p>
+    <!-- Header (con los botones de navegación) -->
+    <header>
+        <div class="logo-rewards">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="Starbucks Logo">
+                </a>
+            </div>
+            <div class="menu-button">
+                <a href="#menu">Menú</a>
+            </div>
+            <div class="rewards-button">
+                <a href="rewards.html">Recompensas</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="gps"><a href="#localizar"><i class="fas fa-map-marker-alt"></i> Localizar tienda</a></li>
+                <li><a href="#unete">Únete</a></li>
+                <li><a href="#ingresar">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content (sección dividida en dos partes) -->
+    <main>
+        <!-- Parte izquierda estática -->
+        <div class="left-section">
+            <h1>Starbucks Rewards</h1>
+            <p>¡Holaaaaa! Café gratis</p>
+            <div class="buttons">
+                <button class="white-button">ÚNETE AHORA</button>
+                <button class="white-button">INICIAR SESIÓN</button>
+            </div>
         </div>
 
-        <!-- Segunda sección: Beneficios -->
-        <div class="reward-item">
-            <img src="beneficios.png" alt="Desbloquea beneficios">
-            <p>Desbloquea beneficios</p>
+        <!-- Parte derecha con barra de deslizamiento -->
+        <div class="right-section">
+            <div class="scroll-container">
+                <img src="unete.png" alt="Únete">
+                <img src="beneficios.png" alt="Beneficios">
+                <img src="estrellas.png" alt="Estrellas">
+                <img src="gana.png" alt="Gana">
+                <img src="experiencias.png" alt="Experiencias">
+                <video width="100%" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div>
         </div>
-
-        <!-- Tercera sección: Estrellas -->
-        <div class="reward-item">
-            <img src="estrellas.png" alt="Obtén estrellas">
-            <p>Obtén estrellas con tus compras</p>
-        </div>
-
-        <!-- Cuarta sección: Gana -->
-        <div class="reward-item">
-            <img src="gana.png" alt="Gana recompensas">
-            <p>Gana recompensas con cada visita</p>
-        </div>
-
-        <!-- Quinta sección: Experiencias -->
-        <div class="reward-item">
-            <img src="experiencias.png" alt="Disfruta experiencias exclusivas">
-            <p>Disfruta experiencias exclusivas</p>
-        </div>
-    </div>
-
-    <!-- Video -->
-    <div class="reward-video">
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
-    </div>
+    </main>
 </body>
 </html>
