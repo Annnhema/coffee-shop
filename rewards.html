@@ -3,56 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rewards - Starbucks</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Starbucks Rewards</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Contenedor principal */
+        .rewards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilo para cada sección */
+        .reward-item {
+            margin: 10px;
+            max-width: 200px;
+        }
+
+        .reward-item img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .reward-item p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Estilo del video */
+        .reward-video {
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .reward-video video {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo-rewards">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo.jpg" alt="Starbucks Logo">
-                </a>
-            </div>
-            <div class="menu-button">
-                <a href="#menu">Menú</a>
-            </div>
-            <div class="rewards-button">
-                <a href="#rewards">Recompensas</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Contenido Principal -->
-    <main>
-        <!-- Barra Rectangular de Encabezado -->
-        <div class="noticias-header">
-            RECOMPENSAS
+    <!-- Contenido principal -->
+    <div class="rewards-container">
+        <!-- Primera sección: Únete -->
+        <div class="reward-item">
+            <img src="unete.png" alt="Únete a Starbucks Rewards">
+            <p>Únete a Starbucks Rewards</p>
         </div>
 
-        <!-- Sección de Recompensas -->
-        <div class="section">
-            <h2>Gana más con Starbucks Rewards</h2>
-            <p>Descubre cómo puedes obtener más recompensas con cada compra.</p>
-            <img src="rewards-benefits.png" alt="Beneficios Rewards" style="width: 80%; margin-top: 20px;">
+        <!-- Segunda sección: Beneficios -->
+        <div class="reward-item">
+            <img src="beneficios.png" alt="Desbloquea beneficios">
+            <p>Desbloquea beneficios</p>
         </div>
 
-        <!-- Beneficios Listados -->
-        <div class="images-section">
-            <div class="image">
-                <img src="stars.png" alt="Gana Estrellas">
-                <div class="info-box promo">
-                    <p>Gana Estrellas por cada compra</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="free-drinks.png" alt="Bebidas Gratis">
-                <div class="info-box promo">
-                    <p>Canjea Estrellas por bebidas gratis</p>
-                </div>
-            </div>
+        <!-- Tercera sección: Estrellas -->
+        <div class="reward-item">
+            <img src="estrellas.png" alt="Obtén estrellas">
+            <p>Obtén estrellas con tus compras</p>
         </div>
-    </main>
+
+        <!-- Cuarta sección: Gana -->
+        <div class="reward-item">
+            <img src="gana.png" alt="Gana recompensas">
+            <p>Gana recompensas con cada visita</p>
+        </div>
+
+        <!-- Quinta sección: Experiencias -->
+        <div class="reward-item">
+            <img src="experiencias.png" alt="Disfruta experiencias exclusivas">
+            <p>Disfruta experiencias exclusivas</p>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="reward-video">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
 </body>
 </html>
