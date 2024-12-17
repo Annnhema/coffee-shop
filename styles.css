@@ -171,57 +171,74 @@ header .unirse-button a:hover {
     color: white; /* Texto blanco */
 }
 
-/* Estilo específico para la página Rewards */
-.rewards-container {
+/* Modificaciones para la funcionalidad de Noticias */
+
+/* Barra que se extiende a través del ancho completo al hacer clic */
+.noticias-header.active {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-size: 30px; /* Aumenta el tamaño de la fuente */
+    padding: 20px; /* Más espacio en la barra */
+}
+
+/* Ajustar el espacio entre imágenes */
+.noticias-images {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin-top: 2cm;
 }
 
-.rewards-left {
-    width: 50%;
-    background-color: #036635; /* Verde Starbucks */
+/* Mejorar la disposición de las imágenes y recuadros */
+.noticias-image {
+    position: relative;
+    width: calc(50% - 10px);
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias-image img {
+    width: 100%;
+    height: auto;
+}
+
+.recuadro-noticias {
+    background-color: #036635;
     color: white;
-    padding: 30px;
-    font-size: 24px;
+    padding: 20px;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-.rewards-left h1 {
-    margin-bottom: 20px;
-}
-
-.rewards-left .join-now, .rewards-left .sign-in {
-    background-color: white;
-    color: #036635;
+/* Estilo específico para los botones dentro de recuadros */
+.recuadro-noticias a {
+    display: inline-block;
     padding: 10px 20px;
-    border-radius: 25px;
-    margin: 10px;
-    font-weight: bold;
+    background-color: #fff;
+    color: #036635;
     text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-.rewards-left .join-now:hover, .rewards-left .sign-in:hover {
+.recuadro-noticias a:hover {
     background-color: #036635;
     color: white;
 }
 
-/* Estilo para la parte derecha con las 5 imágenes */
-.rewards-right {
-    width: 50%;
-    overflow-y: auto; /* Permite desplazarse si hay mucho contenido */
-    height: 100vh; /* Altura completa */
-}
-
-.rewards-right img {
+/* Asegurar que los recuadros estén alineados y visibles */
+.noticias-image .recuadro-noticias {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-/* Estilo para el video */
-.rewards-right video {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+    text-align: center;
 }
