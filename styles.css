@@ -51,7 +51,6 @@ header .rewards-button:hover {
 header .other-buttons {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaciado entre los botones */
 }
 
 header .other-buttons a {
@@ -60,12 +59,12 @@ header .other-buttons a {
     margin: 0 10px;
     border-radius: 25px;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
 header .other-buttons .localizar {
     background-color: #036635; /* Botón Localizar tienda */
-    color: white;
 }
 
 header .other-buttons .ingresar {
@@ -75,7 +74,6 @@ header .other-buttons .ingresar {
 
 header .other-buttons .unirse {
     background-color: black; /* Botón Unirse */
-    color: white;
 }
 
 /* Estilo de los botones cuando se pasa el ratón */
@@ -180,3 +178,4 @@ main {
         width: 100%; /* 1 imagen por fila en pantallas pequeñas */
     }
 }
+
