@@ -85,11 +85,11 @@ header .other-buttons a:hover {
     display: flex;
     justify-content: space-between;
     margin: 3cm 3cm 3cm 3cm; /* Margen de 3cm alrededor */
-    gap: 1cm; /* Espacio de 1cm entre las imágenes */
+    gap: 1.5cm; /* Espacio de 1.5cm entre las imágenes */
 }
 
 .image {
-    width: calc(50% - 0.5cm); /* Asegura que las imágenes estén lado a lado con un margen */
+    width: calc(50% - 0.75cm); /* Ajustamos el ancho para las imágenes con el nuevo margen */
     height: auto;
     background-color: #e0e0e0;
     display: flex;
@@ -142,30 +142,7 @@ header .other-buttons a:hover {
     margin-top: 10px;
     width: 100%;
     font-size: 16px;
-    height: 6cm; /* Cambiar la altura a 6 cm */
-}
-
-/* Ajustar márgenes de imágenes */
-.noticias-images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2cm;
-    margin-left: 5cm; /* Agregar margen izquierdo de 5cm en Noticias */
-    margin-right: 5cm; /* Agregar margen derecho de 5cm en Historias */
-}
-
-.noticias-image {
-    position: relative;
-    width: calc(50% - 10px); /* Aseguramos que las imágenes estén bien distribuidas */
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.noticias-image img {
-    width: 100%;
-    height: auto;
+    height: 70px; /* Aumentar la altura del recuadro */
 }
 
 /* Asegurarse de que el contenido esté alineado y bien distribuido */
@@ -247,4 +224,19 @@ header .unirse-button a:hover {
     width: 100%;
     height: auto;
     margin-top: 20px;
+}
+
+/* Ajustar los márgenes y el posicionamiento de los botones debajo de las imágenes */
+.image .button {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px; /* Asegura que esté separado de la imagen */
+}
+
+/* Botón "Ver más" debajo de las imágenes en Noticias y Promociones */
+.noticias-header .button,
+.promo .button {
+    margin-top: 1.5cm; /* Añadir separación entre las imágenes y los botones */
 }
