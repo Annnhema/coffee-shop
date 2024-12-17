@@ -35,7 +35,9 @@ header .logo img {
 /* Estilo de los botones de la barra superior (Menu, Rewards, Localizar Tienda, Ingresar, Unirse) */
 header .menu-button a,
 header .rewards-button a,
-header .other-buttons a {
+header .localizar-button a,
+header .ingresar-button a,
+header .unirse-button a {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -50,7 +52,9 @@ header .other-buttons a {
 /* Estilo de los botones cuando se pasa el ratón */
 header .menu-button a:hover,
 header .rewards-button a:hover,
-header .other-buttons a:hover {
+header .localizar-button a:hover,
+header .ingresar-button a:hover,
+header .unirse-button a:hover {
     background-color: #036635;
     color: white;
 }
@@ -85,14 +89,14 @@ header .localizar-button a {
 }
 
 /* Sección de Imágenes y Recuadros */
-.noticias-images {
+.images-section {
     display: flex;
     justify-content: space-between;
     margin: 3cm 3cm 3cm 3cm; /* Margen de 3cm alrededor */
     gap: 1cm; /* Espacio de 1cm entre las imágenes */
 }
 
-.noticias-image {
+.image {
     width: calc(50% - 0.5cm); /* Asegura que las imágenes estén lado a lado con un margen */
     height: auto;
     background-color: #e0e0e0;
@@ -102,9 +106,38 @@ header .localizar-button a {
     position: relative;
 }
 
-.noticias-image img {
+.image img {
     width: 100%;
     height: auto;
+}
+
+/* Caja de Información debajo de las imágenes */
+.info-box {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-box p {
+    margin-bottom: 10px;
+}
+
+.info-box .button {
+    background-color: white;
+    color: #036635;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.info-box .button:hover {
+    background-color: #036635;
+    color: white;
 }
 
 /* Recuadros verdes debajo de las imágenes */
