@@ -35,7 +35,7 @@ header .logo img {
 /* Estilo de los botones de la barra superior (Menu, Rewards, Localizar Tienda, Ingresar, Unirse) */
 header .menu-button a,
 header .rewards-button a,
-header .unirse-button a,
+header .unete-button a,
 header .other-buttons a {
     display: inline-block;
     padding: 10px 20px;
