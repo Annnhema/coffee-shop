@@ -1,4 +1,4 @@
-Resetting some default styles */ 
+/* Resetting some default styles */ 
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +36,10 @@ header .logo img {
 header .menu-button a,
 header .rewards-button a,
 header .unete-button a,
-header .other-buttons a {
+header .other-buttons a,
+header .gps a, 
+header .ingresar-button a,
+header .unirse-button a {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -51,7 +54,10 @@ header .other-buttons a {
 /* Estilo de los botones cuando se pasa el ratón */
 header .menu-button a:hover,
 header .rewards-button a:hover,
-header .other-buttons a:hover {
+header .other-buttons a:hover,
+header .gps a:hover, 
+header .ingresar-button a:hover,
+header .unirse-button a:hover {
     background-color: #036635;
     color: white;
 }
@@ -109,16 +115,18 @@ header .other-buttons a:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 30px 20px; /* Aumentar el padding para hacerlo más largo */
+    padding: 40px 20px; /* Aumentar el padding para hacerlo más largo */
     text-align: center;
     background-color: #f7c5d3; /* Rosa para Noticias */
     font-size: 16px;
+    height: 4cm; /* Hacer el recuadro más largo */
 }
 
 .info-box.promo {
     background-color: #d3f7c5; /* Verde para Promociones */
 }
 
+/* Botones dentro de los recuadros */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -129,7 +137,7 @@ header .other-buttons a:hover {
     margin-top: 10px;
 }
 
-/* Estilo para los botones dentro de los recuadros */
+/* Estilo para los botones dentro de los recuadros de promociones */
 .info-box.promo .button {
     background-color: #36b73f; /* Verde fuerte */
 }
@@ -149,27 +157,6 @@ header .other-buttons a:hover {
 /* Asegurarse de que el contenido esté alineado y bien distribuido */
 main {
     margin-top: 40px;
-}
-
-/* Estilo para los botones "Localizar tienda", "Ingresar" y "Unirse" */
-header .gps a, 
-header .ingresar-button a,
-header .unirse-button a {
-    background-color: #f0f0f0; /* Fondo gris claro */
-    color: #036635; /* Color verde Starbucks */
-    padding: 10px 20px;
-    border-radius: 25px;
-    margin: 0 10px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-}
-
-header .gps a:hover, 
-header .ingresar-button a:hover,
-header .unirse-button a:hover {
-    background-color: #036635; /* Fondo verde */
-    color: white; /* Texto blanco */
 }
 
 /* Estilo específico para la página Rewards */
@@ -243,8 +230,6 @@ header .unirse-button a:hover {
 }
 
 /* Nuevos estilos para la sección de Noticias */
-
-/* Sección de Noticias */
 .noticias-header {
     background-color: #036635; /* Verde Starbucks */
     color: white;
@@ -255,7 +240,6 @@ header .unirse-button a:hover {
     margin-top: 20px;
 }
 
-/* Sección de Imágenes */
 .noticias-images {
     display: flex;
     justify-content: space-between;
@@ -299,16 +283,4 @@ header .unirse-button a:hover {
 
 .button:hover {
     background-color: #02733d; /* Cambio de color al pasar el cursor */
-}
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .noticias-images {
-        flex-direction: column;
-    }
-
-    .noticias-image {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }
