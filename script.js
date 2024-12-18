@@ -28,4 +28,23 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('rewards-button')?.addEventListener('click', function() {
         window.location.href = 'rewards.html'; // Cambiar 'rewards.html' al archivo adecuado
     });
+
+    // Redirigir al hacer clic en los botones de menú
+    const menuButtons = document.querySelectorAll('.menu-button a');
+    menuButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();  // Prevenir el comportamiento por defecto del enlace
+            const targetPage = button.getAttribute('href');
+            window.location.href = targetPage;  // Redirigir a la página de destino
+        });
+    });
+
+    // Redirigir al hacer clic en el botón de recompensas
+    const rewardsButton = document.querySelector('.rewards-button a');
+    if (rewardsButton) {
+        rewardsButton.addEventListener('click', function(event) {
+            event.preventDefault();  // Prevenir el comportamiento por defecto del enlace
+            window.location.href = rewardsButton.getAttribute('href');  // Redirigir a la página de recompensas
+        });
+    }
 });
