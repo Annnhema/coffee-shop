@@ -1,4 +1,4 @@
-/* Resetting some default styles */ 
+/* Resetting some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@ header .logo img {
     cursor: pointer;
 }
 
-/* Estilo de los botones de la barra superior (Menu, Rewards, Localizar Tienda, Ingresar, Unirse) */
+/* Estilo de los botones de la barra superior */
 header .menu-button a,
 header .rewards-button a,
 header .unete-button a,
@@ -51,7 +51,7 @@ header .unirse-button a {
     font-weight: bold;
 }
 
-/* Estilo de los botones cuando se pasa el ratón */
+/* Hover effects for buttons */
 header .menu-button a:hover,
 header .rewards-button a:hover,
 header .other-buttons a:hover,
@@ -60,17 +60,6 @@ header .ingresar-button a:hover,
 header .unirse-button a:hover {
     background-color: #036635;
     color: white;
-}
-
-/* Barra Rectangular de Noticias */
-.noticias-header {
-    background-color: #036635; /* Verde Starbucks */
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    padding: 15px;
-    width: 100%;
-    margin-top: 20px;
 }
 
 /* Sección de Imágenes Horizontales */
@@ -283,4 +272,40 @@ main {
 
 .button:hover {
     background-color: #02733d; /* Cambio de color al pasar el cursor */
+}
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    .images-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rewards-container {
+        flex-direction: column;
+    }
+
+    .rewards-left, .rewards-right {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .logo-rewards {
+        flex-direction: column;
+    }
+
+    header .menu-button a,
+    header .rewards-button a,
+    header .unete-button a,
+    header .gps a {
+        padding: 10px 15px;
+    }
 }
