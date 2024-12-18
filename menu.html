@@ -5,81 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú - Starbucks</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script> <!-- Vincula el JS -->
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Encabezado con navegación -->
     <header>
-        <div class="logo-rewards">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo.jpg" alt="Starbucks Logo">
-                </a>
-            </div>
-            <div class="menu-button">
-                <a href="#latte">Menú</a>
-            </div>
-            <div class="rewards-button">
-                <a href="rewards.html">Recompensas</a>
-            </div>
-        </div>
+        <nav class="logo-rewards">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Logotipo de Starbucks">
+            </a>
+            <a href="menu.html" class="menu-button">Menú</a>
+            <a href="rewards.html" class="rewards-button">Recompensas</a>
+        </nav>
         <nav>
             <ul>
-                <li class="gps"><a href="#localizar"><i class="fas fa-map-marker-alt"></i> Localizar tienda</a></li>
-                <li><a href="#ingresar">Ingresar</a></li>
-                <li><a href="#unete">Únete</a></li>
+                <li><a href="#localizar">Localizar tienda</a></li>
+                <li><a href="ingresar.html">Ingresar</a></li>
+                <li><a href="unete.html">Únete</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Secciones del Menú -->
     <main>
-        <!-- Sección de Categorías de Menú -->
+        <h1>Nuestro Menú</h1>
+
         <section id="latte" class="section">
             <h2>Latte</h2>
-            <img src="LATTE (2).png" alt="Latte" class="section-image">
-            <p>Disfruta de nuestro delicioso Latte, disponible en diferentes tamaños y personalizable a tu gusto.</p>
+            <img src="LATTE.png" alt="Imagen de un café Latte" class="section-image">
+            <p>Disfruta de nuestro delicioso Latte, personalizable y disponible en diferentes tamaños.</p>
         </section>
 
         <section id="cafe" class="section">
             <h2>Café</h2>
-            <img src="cafe (2).png" alt="Café" class="section-image">
-            <p>Elige entre nuestros cafés más frescos y aromáticos, perfectos para cualquier momento del día.</p>
+            <img src="cafe.png" alt="Café servido en taza" class="section-image">
+            <p>Elige entre nuestros cafés frescos y aromáticos, perfectos para cualquier momento del día.</p>
         </section>
 
         <section id="temporada" class="section">
             <h2>Temporada</h2>
-            <img src="temporada.png" alt="Temporada" class="section-image">
-            <p>Prueba nuestras bebidas especiales de temporada, solo por tiempo limitado.</p>
+            <img src="temporada.png" alt="Bebida especial de temporada" class="section-image">
+            <p>Prueba nuestras bebidas especiales, solo disponibles por tiempo limitado.</p>
         </section>
 
         <section id="planeta" class="section">
             <h2>Planeta</h2>
-            <img src="Planeta (2).png" alt="Planeta" class="section-image">
+            <img src="planeta.png" alt="Opciones ecológicas de Starbucks" class="section-image">
             <p>Contribuye al cuidado del planeta con nuestras opciones ecológicas y sostenibles.</p>
         </section>
 
-        <!-- Sección de Especialidades -->
         <section id="especialidades" class="section">
             <h2>Especialidades</h2>
             <div class="images-section">
                 <div class="image">
-                    <img src="especialidad1.png" alt="Especialidad 1">
-                    <div class="info-box">
-                        <p>Descubre nuestras bebidas exclusivas.</p>
-                    </div>
+                    <img src="especialidad1.png" alt="Especialidad de café 1">
+                    <p>Descubre nuestras bebidas exclusivas.</p>
                 </div>
                 <div class="image">
-                    <img src="especialidad2.png" alt="Especialidad 2">
-                    <div class="info-box">
-                        <p>Sabores únicos, solo para ti.</p>
-                    </div>
+                    <img src="especialidad2.png" alt="Especialidad de café 2">
+                    <p>Sabores únicos, hechos solo para ti.</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Pie de página -->
     <footer>
-        <p>© 2024 Starbucks Coffee Company. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Starbucks Coffee Company. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
